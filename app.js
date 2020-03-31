@@ -2,11 +2,23 @@
 
 // 5 questions about myself
 // 1. Am I am web developer
-var webDeveloper = confirm('Am I a web developer ');
-console.log("yes: " + webDeveloper);
+var webDeveloper = prompt('Am I a web developer? ');
+console.log('Am I a web developer: ' + webDeveloper);
+if (webDeveloper === 'yes') {
+  alert( 'yes I am a web developer');
+  console.log('I am a web developer');
+} else {
+  alert('Nope, I am a web developer' );
+  console.log('I am a web developer' );
+};
+
+
 // 2. Do I have a dog? ... Named maddie
-var haveDog = 
+var haveDog = confirm('Do I have a dog?');
+console.log('yes: ' + haveDog);
 // 3. Did I have a prior career in education?
+var priorCareer = confirm('Did I have a prior career in education?');
+console.log('yes: ' + priorCareer);
 // 4. Did I break my thumb by tripping on my own foot?
 // 5. Do I love Star Wars?
 

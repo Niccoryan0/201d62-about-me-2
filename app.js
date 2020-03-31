@@ -22,9 +22,21 @@ if (haveDog === 'yes') {
   alert('I have a dog named Maddie')
 };
 // 3. Did I have a prior career in education?
-var priorCareer = confirm('Did I have a prior career in education?');
-console.log('yes: ' + priorCareer);
+var priorCareer = prompt('Did I have a prior career in education?');
+console.log('I had a career in education: ' + priorCareer);
+if (haveDog === 'yes') {
+  alert('I did have a career in education');
+} else {
+  alert('I did have a career in education')
+};
 // 4. Did I break my thumb by tripping on my own foot?
+var brokenThumb = prompt('Did I break my thumb by tripping on my own foot??');
+console.log('I broke my thumb: ' + brokenThumb);
+if (haveDog === 'yes') {
+  alert('I did break my ');
+} else {
+  alert('Unfortunately, I did break my thumb.')
+};
 // 5. Do I love Star Wars?
 
 

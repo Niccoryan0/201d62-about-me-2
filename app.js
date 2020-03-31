@@ -14,8 +14,13 @@ if (webDeveloper === 'yes') {
 
 
 // 2. Do I have a dog? ... Named maddie
-var haveDog = confirm('Do I have a dog?');
-console.log('yes: ' + haveDog);
+var haveDog = prompt('Do I have a dog?');
+console.log('haveDog: ' + haveDog);
+if (haveDog === 'yes') {
+  alert('I have a dog named Maddie');
+} else {
+  alert('I have a dog named Maddie')
+};
 // 3. Did I have a prior career in education?
 var priorCareer = confirm('Did I have a prior career in education?');
 console.log('yes: ' + priorCareer);

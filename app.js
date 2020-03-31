@@ -1,6 +1,11 @@
 'use strict'
 
 // 5 questions about myself
+
+// welcome message
+var welcome = prompt('Welcome, please tell me your name. ');
+alert('hello ' + welcome);
+console.log('userName ' + welcome);
 // 1. Am I am web developer
 var webDeveloper = prompt('Am I a web developer? ');
 console.log('Am I a web developer: ' + webDeveloper);
@@ -11,8 +16,6 @@ if (webDeveloper === 'yes') {
   alert('Nope, I am a web developer' );
   console.log('I am a web developer' );
 };
-
-
 // 2. Do I have a dog? ... Named maddie
 var haveDog = prompt('Do I have a dog?');
 console.log('haveDog: ' + haveDog);
@@ -32,12 +35,17 @@ if (haveDog === 'yes') {
 // 4. Did I break my thumb by tripping on my own foot?
 var brokenThumb = prompt('Did I break my thumb by tripping on my own foot??');
 console.log('I broke my thumb: ' + brokenThumb);
-if (haveDog === 'yes') {
+if (brokenThumb === 'yes') {
   alert('I did break my ');
 } else {
   alert('Unfortunately, I did break my thumb.')
 };
-// 5. Do I love Star Wars?
+// 5. Is my goal to become a front end react developer
+var careerGoal = prompt('Is Is my goal to become a front end react developer');
+console.log('I want to be a frontend react developer');
+if(careerGoal === 'yes') {
+  alert('I want to be a frontend react developer ');
+};
 
 
 // y starts with

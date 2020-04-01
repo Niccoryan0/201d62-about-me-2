@@ -11,10 +11,10 @@ var webDeveloper = prompt('Am I a web developer? ');
 console.log('Am I a web developer: ' + webDeveloper);
 if (webDeveloper === 'yes') {
   alert( 'yes I am a web developer');
-  console.log('I am a web developer');
+  // console.log('I am a web developer');
 } else {
   alert('Nope, I am a web developer' );
-  console.log('I am a web developer' );
+  // console.log('I am a web developer' );
 };
 // 2. Do I have a dog? ... Named maddie
 var haveDog = prompt('Do I have a dog?');

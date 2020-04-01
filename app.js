@@ -4,7 +4,7 @@
 
 // welcome message
 var welcome = prompt('Welcome, please tell me your name. ');
-alert('hello ' + welcome);
+// alert('hello ' + welcome);
 console.log('userName ' + welcome);
 // 1. Am I am web developer
 var webDeveloper = prompt('Am I a web developer? ');
@@ -13,7 +13,7 @@ if (webDeveloper === 'yes') {
   console.log( 'yes I am a web developer');
   // console.log('I am a web developer');
 } else {
-  alert('Nope, I am a web developer' );
+  // alert('Nope, I am a web developer' );
   console.log('Nope, I am a web developer' );
   // console.log('I am a web developer' );
 };
@@ -21,39 +21,66 @@ if (webDeveloper === 'yes') {
 var haveDog = prompt('Do I have a dog?');
 console.log('haveDog: ' + haveDog);
 if (haveDog === 'yes') {
-  alert('I have a dog named Maddie');
+  // alert('I have a dog named Maddie');
   console.log('I have a dog named Maddie');
 } else {
-  alert('I have a dog named Maddie')
+  // alert('I have a dog named Maddie')
   console.log('I have a dog named Maddie')
 };
 // 3. Did I have a prior career in education?
 var priorCareer = prompt('Did I have a prior career in education?');
 console.log('I had a career in education: ' + priorCareer);
 if (haveDog === 'yes') {
-  alert('I did have a career in education');
+  // alert('I did have a career in education');
   console.log('I did have a career in education');
 } else {
-  alert('I did have a career in education')
+  // alert('I did have a career in education')
   console.log('I did have a career in education')
 };
 // 4. Did I break my thumb by tripping on my own foot?
 var brokenThumb = prompt('Did I break my thumb by tripping on my own foot??');
 console.log('I broke my thumb: ' + brokenThumb);
 if (brokenThumb === 'yes') {
-  alert('I did break my ');
+  // alert('I did break my ');
   console.log('I did break my ');
 } else {
-  alert('Unfortunately, I did break my thumb.')
+  // alert('Unfortunately, I did break my thumb.')
   console.log('Unfortunately, I did break my thumb.')
 };
 // 5. Is my goal to become a front end react developer
 var careerGoal = prompt('Is Is my goal to become a front end react developer');
 console.log('I want to be a frontend react developer');
 if(careerGoal === 'yes') {
-  alert('I want to be a frontend react developer ');
+  // alert('I want to be a frontend react developer ');
   console.log('I want to be a frontend react developer ');
 };
+// 6. Guess my favorite number from these four options. 
+//TODO: Should 10 be a string?
+var favoriteNumber = 10;
+var favoriteNumberResponse = [''];
+var favoriteNumberQuestion = prompt('Guess my favorite number between 1 and 20: you have four tries');
+// I want to give user 4 tries
+// TODO: make for loop
+for(var i = 0; 1 < 3; i++) {
+  if(favoriteNumberResponse[i] === favoriteNumber) {
+    alert('10 is my favorite number!');
+    //too low
+  } else if(favoriteNumberResponse[i] < favoriteNumber) {
+    alert('your guess was too low, please try again');
+  } else if(favoriteNumberResponse[i] > favoriteNumber) {
+    alert('your guess was too high, please try again');
+  } else {
+    alert('please choose a number between 1 and 20')
+  }
+  
+}
+// TODO: If they guess 10, I want to tell them that "10 is my favorite number"
+// TODO: If their guess is lower than 10, I will alert them "your guess was too low, please try again"
+// TODO: If their guess is higher than 10, I will alert them "your guess was too high, please try again"
+// TODO: Gives the user 4 opportunities
+
+// console.log(favoriteNumberQuestion);
+
 
 
 // y starts with

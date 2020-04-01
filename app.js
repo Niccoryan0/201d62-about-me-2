@@ -57,23 +57,27 @@ if(careerGoal === 'yes') {
 // 6. Guess my favorite number from these four options. 
 //TODO: Should 10 be a string?
 var favoriteNumber = 10;
-var favoriteNumberResponse = [''];
+var favoriteNumberAttemps = 4;
 var favoriteNumberQuestion = prompt('Guess my favorite number between 1 and 20: you have four tries');
 // I want to give user 4 tries
 // TODO: make for loop
-for(var i = 0; 1 < 3; i++) {
-  if(favoriteNumberResponse[i] === favoriteNumber) {
-    alert('10 is my favorite number!');
-    //too low
-  } else if(favoriteNumberResponse[i] < favoriteNumber) {
-    alert('your guess was too low, please try again');
-  } else if(favoriteNumberResponse[i] > favoriteNumber) {
-    alert('your guess was too high, please try again');
-  } else {
-    alert('please choose a number between 1 and 20')
-  }
+// TODO: do while loop.
+
+
+// for(var i = 0; i < favoriteNumberAttemps; i++) {
+//   if(favoriteNumberResponse === 10) {
+//     alert('10 is my favorite number!'); //Why is this not working!?
+//     //too low
+//   } else if(favoriteNumberResponse < 10) {
+//     prompt('your guess was too low, please try again');
+//     //too high
+//   } else if(favoriteNumberResponse > 10) {
+//     prompt('your guess was too high, please try again');
+//   } else {
+//     prompt('please choose a number between 1 and 20')
+//   }
   
-}
+// }
 // TODO: If they guess 10, I want to tell them that "10 is my favorite number"
 // TODO: If their guess is lower than 10, I will alert them "your guess was too low, please try again"
 // TODO: If their guess is higher than 10, I will alert them "your guess was too high, please try again"

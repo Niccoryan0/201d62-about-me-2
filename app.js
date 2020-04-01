@@ -54,17 +54,13 @@
 //   // alert('I want to be a frontend react developer ');
 //   console.log('I want to be a frontend react developer ');
 // };
+
 // 6. Guess my favorite number from these four options. 
-//TODO: Should 10 be a string?
+//This code block checks if the guess is correct and loops through the 4 chances to guess
 var favoriteNumber = 10;
 var userAttempts = 4;
 var favoriteNumberQuestion = prompt('Guess my favorite number between 1 and 20: you have four tries');
-// I want to give user 4 tries
-// TODO: make for loop
-// TODO: do while loop.
 
-//To put string into an integer use parse int
-//stop a for loop early
 for(var i = 0; i < userAttempts; i++) {
   console.log(favoriteNumberQuestion);
   if(parseInt(favoriteNumberQuestion) === 10) {
@@ -80,13 +76,10 @@ for(var i = 0; i < userAttempts; i++) {
     favoriteNumberQuestion = prompt('please choose a number between 1 and 20')
   }
 }
-// TODO: If they guess 10, I want to tell them that "10 is my favorite number"
-// TODO: If their guess is lower than 10, I will alert them "your guess was too low, please try again"
-// TODO: If their guess is higher than 10, I will alert them "your guess was too high, please try again"
-// TODO: Gives the user 4 opportunities
 
-// console.log(favoriteNumberQuestion);
+// 7. What is my favorite harry potter book?
+// TODO: array ['Sorcerers Stone' , 'Chamber of Secrets', Prizoner of Azkaban', 'Goblet of Fire', 'Order of the Phoenix', 'Half Blood Prince', 'Deathly Hallows']
+var harryPotterBooks = ['Sorcerers Stone' , 'Chamber of Secrets', 'Prizoner of Azkaban', 'Goblet of Fire', 'Order of the Phoenix', 'Half Blood Prince', 'Deathly Hallows'];
+// console.log(harryPotterBooks);
+// TODO: give the user multiple choice question
 
-
-
-// y starts with

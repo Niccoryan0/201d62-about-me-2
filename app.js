@@ -1,15 +1,15 @@
 'use strict' // requires you to use correct notation. Syntax checker is less forgiving. cd
 
-// 5 questions about myself
-// TODO: Score Counter
+
+//TODO: fix alerts
 var scoreCounter = 0;
 // welcome message
 var welcome = prompt('Welcome, please tell me your name. ');
 // alert('hello ' + welcome);
-console.log('userName ' + welcome);
+alert('userName ' + welcome);
 // 1. Am I am web developer
 var webDeveloper = prompt('Am I a web developer? ');
-console.log('Am I a web developer: ' + webDeveloper);
+alert('Am I a web developer: ' + webDeveloper);
 if (webDeveloper === 'yes') {
   console.log( 'yes I am a web developer');
   scoreCounter++;
@@ -33,7 +33,7 @@ if (haveDog === 'yes') {
 // 3. Did I have a prior career in education?
 var priorCareer = prompt('Did I have a prior career in education?');
 console.log('I had a career in education: ' + priorCareer);
-if (haveDog === 'yes') {
+if (priorCareer === 'yes') {
   alert('I did have a career in education');
   console.log('I did have a career in education');
   scoreCounter++;

@@ -10,21 +10,27 @@ alert('Welcome ' + welcome);
 // TODO: Make a variable for incorrect responses
 
 // 1. Am I am web developer
-function webDevF(question) {
+function questionFunction(question, correctAnswer) {
   var userAnswer = prompt(question);
 
   if (userAnswer.toLowerCase().startsWith('y')) {
-    alert('Congratulations, that\'s correct.'); // NL
+    alert(correctAnswer); // NL
     scoreCounter++;
   } else {
     alert('Nope, that\'s incorrect.');
   }
 }
-webDevF('Am I a Web Dev?')
-// What changes: Question
+// TODO: IMPORTANT NOTE: question and correctAnswer are PARAMETERS
+// the string itself is an argument, when we call the function
+// we must give those parameters some ARGUMENTS, in this case
+// the arguments are the strings that we enter when calling.
+questionFunction('Am I a Web Dev?', 'Yes, I am a web developer');
+questionFunction('Do I have a dog?', 'Yes, her name is Maddie.');
+questionFunction('Did I have a prior career in education?', 'Yes I worked in special education.');
+questionFunction('Did I break my thumb by tripping on my own foot??', 'Yes I sure did!');
+questionFunction('Is my goal to become a front end react developer?', 'Becoming a front end react developer is my goal.');
 
 
-webDevF('Do I have a dog?');
 // 2. Do I have a dog? ... Named maddie
 // function haveDogF() {
 //   var haveDog = prompt('Do I have a dog?');
@@ -86,17 +92,17 @@ webDevF('Do I have a dog?');
 // var favoriteNumber = 10;
 // var userAttempts = 4;
 // var favoriteNumberQuestion = pr// 2. Do I have a dog? ... Named maddie
-var haveDog = prompt('Do I have a dog?');
-alert('haveDog: ' + haveDog);
+// var haveDog = prompt('Do I have a dog?');
+// alert('haveDog: ' + haveDog);
 
-if (haveDog.toLowerCase().startsWith('y')) {
-  alert('I have a dog named Maddie');
-  console.log('I have a dog named Maddie');
-  scoreCounter++;
-} else {
-  alert('I have a dog named Maddie');
-  console.log('I have a dog named Maddie');
-}
+// if (haveDog.toLowerCase().startsWith('y')) {
+//   alert('I have a dog named Maddie');
+//   console.log('I have a dog named Maddie');
+//   scoreCounter++;
+// } else {
+//   alert('I have a dog named Maddie');
+//   console.log('I have a dog named Maddie');
+// }
 //   'Guess my favorite number between 1 and 20: you have four tries'
 // );
 

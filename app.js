@@ -10,56 +10,48 @@ alert('Welcome ' + welcome);
 // TODO: Make a variable for incorrect responses
 // Notes from Nicco: This function, at present, takes in two parameters, those parameters being question and correctAnswer. These two parameters are *passed into* or used within the function in the place of a question and a response to a correct answer. When called and given the appropriate arguments, it will run all the code contained within it.
 
-// function questionFunction(question, correctAnswer) {
-//   var userAnswer = prompt(question);
+function questionFunction(question, correctAnswer) {
+  var userAnswer = prompt(question);
 
-//   if (userAnswer.toLowerCase().startsWith('y')) {
-//     alert(correctAnswer); // NL
-//     scoreCounter++;
-//   } else {
-//     alert('Nope, that\'s incorrect.');
-//   }
-// }
+  if (userAnswer.toLowerCase().startsWith('y')) {
+    alert(correctAnswer); // NL
+    scoreCounter++;
+  } else {
+    alert('Nope, that\'s incorrect.');
+  }
+}
 
-// // TODO: IMPORTANT NOTE: question and correctAnswer are PARAMETERS
-// // the string itself is an argument, when we call the function
-// // we must give those parameters some ARGUMENTS, in this case
-// // the arguments are the strings that we enter when calling.
-
-// questionFunction('Am I a Web Dev?', 'Yes, I am a web developer');
-// questionFunction('Do I have a dog?', 'Yes, her name is Maddie.');
-// questionFunction('Did I have a prior career in education?', 'Yes I worked in special education.');
-// questionFunction('Did I break my thumb by tripping on my own foot??', 'Yes I sure did!');
-// questionFunction('Is my goal to become a front end react developer?', 'Becoming a front end react developer is my goal.');
-
+// TODO: IMPORTANT NOTE: question and correctAnswer are PARAMETERS
+// the string itself is an argument, when we call the function
+// we must give those parameters some ARGUMENTS, in this case
+// the arguments are the strings that we enter when calling.
 
 
 // // 6. Guess my favorite number from these four options.
 // // This code block checks if the guess is correct and loops through the 4 chances to guess
-// function favNumFunc() {
-//   var favoriteNumber = 10;
-//   var userAttempts = 4;
-//   var favoriteNumberQuestion = parseInt(prompt('Guess my favorite number between 1 and 20: you have four tries'));
+function favNumFunc() {
+  var favoriteNumber = 10;
+  var userAttempts = 4;
+  var favoriteNumberQuestion = parseInt(prompt('Guess my favorite number between 1 and 20: you have four tries'));
 
-//   for (var i = 1; i < userAttempts; i++) {
-//     console.log(favoriteNumberQuestion);
-//     if (favoriteNumberQuestion === favoriteNumber) {
-//       alert('Congratulations!');
-//       scoreCounter++;
-//       break; //Stops the loop
-//     } else if (favoriteNumberQuestion < favoriteNumber) {
-//       favoriteNumberQuestion = prompt('your guess was too low, please try again');
-//       //too high
-//     } else if (favoriteNumberQuestion > favoriteNumber) {
-//       favoriteNumberQuestion = prompt(
-//         'your guess was too high, please try again'
-//       );
-//     }
-//     //TODO: need to tell them that they did not guess correct and tell them the answer
-//   }
-//   alert('My favorite number is actually 10');
-// }
-// favNumFunc();
+  for (var i = 1; i < userAttempts; i++) {
+    console.log(favoriteNumberQuestion);
+    if (favoriteNumberQuestion === favoriteNumber) {
+      alert('Congratulations!');
+      scoreCounter++;
+      break; //Stops the loop
+    } else if (favoriteNumberQuestion < favoriteNumber) {
+      favoriteNumberQuestion = prompt('your guess was too low, please try again');
+      //too high
+    } else if (favoriteNumberQuestion > favoriteNumber) {
+      favoriteNumberQuestion = prompt(
+        'your guess was too high, please try again'
+      );
+    }
+    //TODO: need to tell them that they did not guess correct and tell them the answer
+  }
+  alert('My favorite number is actually 10');
+}
 
 // // fix entering the names
 // // add the options to choose
@@ -94,56 +86,17 @@ function favBookFunc(){
     }
   }
 }
-favBookFunc();
-// alert('you got: ' + scoreCounter + ' points out of 7 available points');
 
 
-
-
-// var ryansFavoriteCars = ['audi rs5', 'subaru wrx', 'ford focus rs'];
-// var sadCarOptions = ['geo metro', 'hona oddysey', 'pinto', 'ford fiesta', 'saab'];
-
-
-
-// // ask the question
-// // check the response
-// //if it is in the favorites they win 
-// // if it is in the sadOnes
-// //it it is neither, correct them sternly
-
-// var usersFavoriteCar = prompt('What is Ryan\'s favorite car');
-// //if it is correct
-// // if it is in the favorite cars
-// // a bunch of ors - in the conditional 
-// // assume they were wrong
-// // check each value with a loop and if right, change the assumption
-// //stop looping
-// //AFTER the loop, respond with out if statement
-
-
-
-// // Flag - a boolean variable that starts (usually) false, and something in an iterative part if the code changes its boolean value- we use the flag after the iteration to check some truth
-
-// for (var guesses = 0; guesses < 3; guesses++);
-
-// var theyWereRight = false;
-
-// for(var carIndex = 0; carIndex < ryansFavoriteCars.length; carIndex++) {
-//   if (usersFavoriteCars === ryansFavoriteCars[carIndex]){
-//     theyWereRight = true;
-//     break;
-//   }
-// }
-// // this will either be true or false no need to say true === true
-// if(theyWereRight){
-//   alert('nice job');
-//   break;
-// } else {
-//   alert('try again');
-// }
-
-
-// // then make it repeat
 
 
 // Call the functions here:
+questionFunction('Am I a Web Dev?', 'Yes, I am a web developer');
+questionFunction('Do I have a dog?', 'Yes, her name is Maddie.');
+questionFunction('Did I have a prior career in education?', 'Yes I worked in special education.');
+questionFunction('Did I break my thumb by tripping on my own foot??', 'Yes I sure did!');
+questionFunction('Is my goal to become a front end react developer?', 'Becoming a front end react developer is my goal.');
+favNumFunc();
+favBookFunc();
+
+alert('you got: ' + scoreCounter + ' points out of 7 available points');

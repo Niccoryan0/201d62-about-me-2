@@ -6,12 +6,12 @@ var scoreCounter = 0;
 // welcome message
 var welcome = prompt('Welcome, please tell me your name. ');
 // alert('hello ' + welcome);
-alert('userName ' + welcome);
+alert('Welcome ' + welcome);
 // 1. Am I am web developer
 var webDeveloper = prompt('Am I a web developer? ');
 alert('Am I a web developer: ' + webDeveloper);
 if (webDeveloper === 'yes') {
-  console.log( 'yes I am a web developer');
+  // console.log( 'yes I am a web developer');
   scoreCounter++;
   // console.log('I am a web developer');
 } else {
@@ -21,7 +21,7 @@ if (webDeveloper === 'yes') {
 };
 // 2. Do I have a dog? ... Named maddie
 var haveDog = prompt('Do I have a dog?');
-console.log('haveDog: ' + haveDog);
+alt('haveDog: ' + haveDog);
 if (haveDog === 'yes') {
   alert('I have a dog named Maddie');
   console.log('I have a dog named Maddie');

@@ -8,8 +8,7 @@ var welcome = prompt('Welcome, please tell me your name. ');
 alert('Welcome ' + welcome);
 
 // TODO: Make a variable for incorrect responses
-
-// 1. Am I am web developer
+// Notes from Nicco: This function, at present, takes in two parameters, those parameters being question and correctAnswer. These two parameters are *passed into* or used within the function in the place of a question and a response to a correct answer. When called and given the appropriate arguments, it will run all the code contained within it.
 function questionFunction(question, correctAnswer) {
   var userAnswer = prompt(question);
 
@@ -30,61 +29,6 @@ questionFunction('Did I have a prior career in education?', 'Yes I worked in spe
 questionFunction('Did I break my thumb by tripping on my own foot??', 'Yes I sure did!');
 questionFunction('Is my goal to become a front end react developer?', 'Becoming a front end react developer is my goal.');
 
-
-// 2. Do I have a dog? ... Named maddie
-// function haveDogF() {
-//   var haveDog = prompt('Do I have a dog?');
-
-//   if (haveDog.toLowerCase().startsWith('y')) {
-//     alert('Congratulations/ thats correct.');
-//     scoreCounter++;
-//   } else {
-//     alert('Nope, thats incorrect');
-//   }
-
-// }
-// haveDogF();
-// alert(scoreCounter);
-
-// // 3. Did I have a prior career in education?
-// var priorCareer = prompt('Did I have a prior career in education?');
-// console.log('I had a career in education: ' + priorCareer);
-
-// if (priorCareer.toLowerCase().startsWith('y')) {
-//   alert('I did have a career in education');
-//   console.log('I did have a career in education');
-//   scoreCounter++;
-// } else {
-//   alert('I did have a career in education');
-//   console.log('I did have a career in education');
-// }
-
-
-// // 4. Did I break my thumb by tripping on my own foot?
-// var brokenThumb = prompt('Did I break my thumb by tripping on my own foot??');
-// console.log('I broke my thumb: ' + brokenThumb);
-
-// if (brokenThumb.toLowerCase().startsWith('y')) {
-//   alert('I did break my ');
-//   console.log('I did break my ');
-//   scoreCounter++;
-// } else {
-//   alert('Unfortunately, I did break my thumb.');
-//   console.log('Unfortunately, I did break my thumb.');
-// }
-
-
-// // 5. Is my goal to become a front end react developer
-// var careerGoal = prompt('Is Is my goal to become a front end react developer');
-// console.log('I want to be a frontend react developer');
-
-// if (careerGoal.toLowerCase().startsWith('y')) {
-//   alert('I want to be a frontend react developer ');
-//   console.log('I want to be a frontend react developer ');
-//   scoreCounter++;
-// } else {
-//   alert('Actually, I do want to be a Frontend React Developer'); // This is a Nicco Line
-// }
 
 
 // // 6. Guess my favorite number from these four options.

@@ -10,22 +10,82 @@ alert('Welcome ' + welcome);
 // TODO: Make a variable for incorrect responses
 
 // 1. Am I am web developer
-var webDeveloper = prompt('Am I a web developer? ');
-alert('Am I a web developer: ' + webDeveloper);
-if (webDeveloper.toLowerCase().startsWith('y')) { 
-  // console.log( 'yes I am a web developer');
-  scoreCounter++;
-  // console.log('I am a web developer');
-} else {
-  alert('Nope, I am a web developer');
-  console.log('Nope, I am a web developer');
-  // console.log('I am a web developer' );
+function webDevF(question) {
+  var userAnswer = prompt(question);
+
+  if (userAnswer.toLowerCase().startsWith('y')) {
+    alert('Congratulations, that\'s correct.'); // NL
+    scoreCounter++;
+  } else {
+    alert('Nope, that\'s incorrect.');
+  }
 }
+webDevF('Am I a Web Dev?')
+// What changes: Question
 
 
-
-
+webDevF('Do I have a dog?');
 // 2. Do I have a dog? ... Named maddie
+// function haveDogF() {
+//   var haveDog = prompt('Do I have a dog?');
+
+//   if (haveDog.toLowerCase().startsWith('y')) {
+//     alert('Congratulations/ thats correct.');
+//     scoreCounter++;
+//   } else {
+//     alert('Nope, thats incorrect');
+//   }
+
+// }
+// haveDogF();
+// alert(scoreCounter);
+
+// // 3. Did I have a prior career in education?
+// var priorCareer = prompt('Did I have a prior career in education?');
+// console.log('I had a career in education: ' + priorCareer);
+
+// if (priorCareer.toLowerCase().startsWith('y')) {
+//   alert('I did have a career in education');
+//   console.log('I did have a career in education');
+//   scoreCounter++;
+// } else {
+//   alert('I did have a career in education');
+//   console.log('I did have a career in education');
+// }
+
+
+// // 4. Did I break my thumb by tripping on my own foot?
+// var brokenThumb = prompt('Did I break my thumb by tripping on my own foot??');
+// console.log('I broke my thumb: ' + brokenThumb);
+
+// if (brokenThumb.toLowerCase().startsWith('y')) {
+//   alert('I did break my ');
+//   console.log('I did break my ');
+//   scoreCounter++;
+// } else {
+//   alert('Unfortunately, I did break my thumb.');
+//   console.log('Unfortunately, I did break my thumb.');
+// }
+
+
+// // 5. Is my goal to become a front end react developer
+// var careerGoal = prompt('Is Is my goal to become a front end react developer');
+// console.log('I want to be a frontend react developer');
+
+// if (careerGoal.toLowerCase().startsWith('y')) {
+//   alert('I want to be a frontend react developer ');
+//   console.log('I want to be a frontend react developer ');
+//   scoreCounter++;
+// } else {
+//   alert('Actually, I do want to be a Frontend React Developer'); // This is a Nicco Line
+// }
+
+
+// // 6. Guess my favorite number from these four options.
+// //This code block checks if the guess is correct and loops through the 4 chances to guess
+// var favoriteNumber = 10;
+// var userAttempts = 4;
+// var favoriteNumberQuestion = pr// 2. Do I have a dog? ... Named maddie
 var haveDog = prompt('Do I have a dog?');
 alert('haveDog: ' + haveDog);
 
@@ -37,54 +97,6 @@ if (haveDog.toLowerCase().startsWith('y')) {
   alert('I have a dog named Maddie');
   console.log('I have a dog named Maddie');
 }
-
-
-// 3. Did I have a prior career in education?
-var priorCareer = prompt('Did I have a prior career in education?');
-console.log('I had a career in education: ' + priorCareer);
-
-if (priorCareer.toLowerCase().startsWith('y')) {
-  alert('I did have a career in education');
-  console.log('I did have a career in education');
-  scoreCounter++;
-} else {
-  alert('I did have a career in education');
-  console.log('I did have a career in education');
-}
-
-
-// 4. Did I break my thumb by tripping on my own foot?
-var brokenThumb = prompt('Did I break my thumb by tripping on my own foot??');
-console.log('I broke my thumb: ' + brokenThumb);
-
-if (brokenThumb.toLowerCase().startsWith('y')) {
-  alert('I did break my ');
-  console.log('I did break my ');
-  scoreCounter++;
-} else {
-  alert('Unfortunately, I did break my thumb.');
-  console.log('Unfortunately, I did break my thumb.');
-}
-
-
-// 5. Is my goal to become a front end react developer
-var careerGoal = prompt('Is Is my goal to become a front end react developer');
-console.log('I want to be a frontend react developer');
-
-if (careerGoal.toLowerCase().startsWith('y')) {
-  alert('I want to be a frontend react developer ');
-  console.log('I want to be a frontend react developer ');
-  scoreCounter++;
-} else {
-  alert('Actually, I do want to be a Frontend React Developer'); // This is a Nicco Line
-}
-
-
-// // 6. Guess my favorite number from these four options.
-// //This code block checks if the guess is correct and loops through the 4 chances to guess
-// var favoriteNumber = 10;
-// var userAttempts = 4;
-// var favoriteNumberQuestion = prompt(
 //   'Guess my favorite number between 1 and 20: you have four tries'
 // );
 
@@ -194,3 +206,6 @@ if (careerGoal.toLowerCase().startsWith('y')) {
 
 
 // // then make it repeat
+
+
+// Call the functions here:

@@ -9,64 +9,57 @@ alert('Welcome ' + welcome);
 
 // TODO: Make a variable for incorrect responses
 // Notes from Nicco: This function, at present, takes in two parameters, those parameters being question and correctAnswer. These two parameters are *passed into* or used within the function in the place of a question and a response to a correct answer. When called and given the appropriate arguments, it will run all the code contained within it.
-function questionFunction(question, correctAnswer) {
-  var userAnswer = prompt(question);
 
-  if (userAnswer.toLowerCase().startsWith('y')) {
-    alert(correctAnswer); // NL
-    scoreCounter++;
-  } else {
-    alert('Nope, that\'s incorrect.');
-  }
-}
-// TODO: IMPORTANT NOTE: question and correctAnswer are PARAMETERS
-// the string itself is an argument, when we call the function
-// we must give those parameters some ARGUMENTS, in this case
-// the arguments are the strings that we enter when calling.
-questionFunction('Am I a Web Dev?', 'Yes, I am a web developer');
-questionFunction('Do I have a dog?', 'Yes, her name is Maddie.');
-questionFunction('Did I have a prior career in education?', 'Yes I worked in special education.');
-questionFunction('Did I break my thumb by tripping on my own foot??', 'Yes I sure did!');
-questionFunction('Is my goal to become a front end react developer?', 'Becoming a front end react developer is my goal.');
+// function questionFunction(question, correctAnswer) {
+//   var userAnswer = prompt(question);
 
-
-
-// // 6. Guess my favorite number from these four options.
-// //This code block checks if the guess is correct and loops through the 4 chances to guess
-// var favoriteNumber = 10;
-// var userAttempts = 4;
-// var favoriteNumberQuestion = pr// 2. Do I have a dog? ... Named maddie
-// var haveDog = prompt('Do I have a dog?');
-// alert('haveDog: ' + haveDog);
-
-// if (haveDog.toLowerCase().startsWith('y')) {
-//   alert('I have a dog named Maddie');
-//   console.log('I have a dog named Maddie');
-//   scoreCounter++;
-// } else {
-//   alert('I have a dog named Maddie');
-//   console.log('I have a dog named Maddie');
-// }
-//   'Guess my favorite number between 1 and 20: you have four tries'
-// );
-
-// for (i = 1; i < userAttempts; i++) {
-//   console.log(favoriteNumberQuestion);
-//   if (parseInt(favoriteNumberQuestion) === 10) {
-//     alert('Congratulations!');
+//   if (userAnswer.toLowerCase().startsWith('y')) {
+//     alert(correctAnswer); // NL
 //     scoreCounter++;
-//     break; //Stops the loop
-//   } else if (parseInt(favoriteNumberQuestion) < 10) {
-//     favoriteNumberQuestion = prompt('your guess was too low, please try again');
-//     //too high
-//   } else if (parseInt(favoriteNumberQuestion) > 10) {
-//     favoriteNumberQuestion = prompt(
-//       'your guess was too high, please try again'
-//     );
+//   } else {
+//     alert('Nope, that\'s incorrect.');
 //   }
-//   //TODO: need to tell them that they did not guess correct and tell them the answer
 // }
-// alert('My favorite number is actually 10');
+
+// // TODO: IMPORTANT NOTE: question and correctAnswer are PARAMETERS
+// // the string itself is an argument, when we call the function
+// // we must give those parameters some ARGUMENTS, in this case
+// // the arguments are the strings that we enter when calling.
+
+// questionFunction('Am I a Web Dev?', 'Yes, I am a web developer');
+// questionFunction('Do I have a dog?', 'Yes, her name is Maddie.');
+// questionFunction('Did I have a prior career in education?', 'Yes I worked in special education.');
+// questionFunction('Did I break my thumb by tripping on my own foot??', 'Yes I sure did!');
+// questionFunction('Is my goal to become a front end react developer?', 'Becoming a front end react developer is my goal.');
+
+
+
+// 6. Guess my favorite number from these four options.
+// This code block checks if the guess is correct and loops through the 4 chances to guess
+function favNumFunc() {
+  var favoriteNumber = 10;
+  var userAttempts = 4;
+  var favoriteNumberQuestion = parseInt(prompt('Guess my favorite number between 1 and 20: you have four tries'));
+
+  for (var i = 1; i < userAttempts; i++) {
+    console.log(favoriteNumberQuestion);
+    if (favoriteNumberQuestion === favoriteNumber) {
+      alert('Congratulations!');
+      scoreCounter++;
+      break; //Stops the loop
+    } else if (favoriteNumberQuestion < favoriteNumber) {
+      favoriteNumberQuestion = prompt('your guess was too low, please try again');
+      //too high
+    } else if (favoriteNumberQuestion > favoriteNumber) {
+      favoriteNumberQuestion = prompt(
+        'your guess was too high, please try again'
+      );
+    }
+    //TODO: need to tell them that they did not guess correct and tell them the answer
+  }
+  alert('My favorite number is actually 10');
+}
+favNumFunc();
 
 // // fix entering the names
 // // add the options to choose
@@ -90,7 +83,7 @@ questionFunction('Is my goal to become a front end react developer?', 'Becoming 
 //     harryPotterBooks
 // ).toLowerCase();
 
-// for (var i = 0; i < bookGuesses; i++) {
+// for (i = 0; i < bookGuesses; i++) {
 //   // accessing the harry potter array at the favorite book index
 //   // check an if statement if the favBookQuestion is strictly equal to the harryPotterBooks array accessed at the favoriteBookIndex(which is 0) and calling the toLowerCase() method on that String
 //   if (favBookQuestion === harryPotterBooks[favoriteBookIndex].toLowerCase()) {

@@ -34,72 +34,67 @@ alert('Welcome ' + welcome);
 
 
 
-// 6. Guess my favorite number from these four options.
-// This code block checks if the guess is correct and loops through the 4 chances to guess
-function favNumFunc() {
-  var favoriteNumber = 10;
-  var userAttempts = 4;
-  var favoriteNumberQuestion = parseInt(prompt('Guess my favorite number between 1 and 20: you have four tries'));
+// // 6. Guess my favorite number from these four options.
+// // This code block checks if the guess is correct and loops through the 4 chances to guess
+// function favNumFunc() {
+//   var favoriteNumber = 10;
+//   var userAttempts = 4;
+//   var favoriteNumberQuestion = parseInt(prompt('Guess my favorite number between 1 and 20: you have four tries'));
 
-  for (var i = 1; i < userAttempts; i++) {
-    console.log(favoriteNumberQuestion);
-    if (favoriteNumberQuestion === favoriteNumber) {
-      alert('Congratulations!');
-      scoreCounter++;
-      break; //Stops the loop
-    } else if (favoriteNumberQuestion < favoriteNumber) {
-      favoriteNumberQuestion = prompt('your guess was too low, please try again');
-      //too high
-    } else if (favoriteNumberQuestion > favoriteNumber) {
-      favoriteNumberQuestion = prompt(
-        'your guess was too high, please try again'
-      );
-    }
-    //TODO: need to tell them that they did not guess correct and tell them the answer
-  }
-  alert('My favorite number is actually 10');
-}
-favNumFunc();
+//   for (var i = 1; i < userAttempts; i++) {
+//     console.log(favoriteNumberQuestion);
+//     if (favoriteNumberQuestion === favoriteNumber) {
+//       alert('Congratulations!');
+//       scoreCounter++;
+//       break; //Stops the loop
+//     } else if (favoriteNumberQuestion < favoriteNumber) {
+//       favoriteNumberQuestion = prompt('your guess was too low, please try again');
+//       //too high
+//     } else if (favoriteNumberQuestion > favoriteNumber) {
+//       favoriteNumberQuestion = prompt(
+//         'your guess was too high, please try again'
+//       );
+//     }
+//     //TODO: need to tell them that they did not guess correct and tell them the answer
+//   }
+//   alert('My favorite number is actually 10');
+// }
+// favNumFunc();
 
 // // fix entering the names
 // // add the options to choose
 // // 7. What is my favorite harry potter book?
-// // var favBook = 'Sorcerer Stone';
-// var bookGuesses = 6;
-// var harryPotterBooks = [
-//   'Sorcerers Stone',
-//   'Chamber of Secrets',
-//   'Prizoner of Azkaban',
-//   'Goblet of Fire',
-//   'Order of the Phoenix',
-//   'Half Blood Prince',
-//   'Deathly Hallows'
-// ];
-// var favoriteBookIndex = 0;
-// // TODO: reference multiple favorites
+function favBookFunc(){
+  var bookGuesses = 6;
+  var harryPotterBooks = [
+    'Sorcerers Stone',
+    'Chamber of Secrets',
+    'Prizoner of Azkaban',
+    'Goblet of Fire',
+    'Order of the Phoenix',
+    'Half Blood Prince',
+    'Deathly Hallows'
+  ];
+  var favoriteBookIndex = 0;
+  // TODO: reference multiple favorites, each time favBookQuestion runs, display the array
 
-// var favBookQuestion = prompt(
-//   'What is my favorite Harry Potter Book? from these choices: ' +
-//     harryPotterBooks
-// ).toLowerCase();
-
-// for (i = 0; i < bookGuesses; i++) {
-//   // accessing the harry potter array at the favorite book index
-//   // check an if statement if the favBookQuestion is strictly equal to the harryPotterBooks array accessed at the favoriteBookIndex(which is 0) and calling the toLowerCase() method on that String
-//   if (favBookQuestion === harryPotterBooks[favoriteBookIndex].toLowerCase()) {
-//     alert('Harry Potter and the Sorcerers Stone is my favorite book');
-//     scoreCounter++;
-//     break;
-//   } else if (i < bookGuesses - 1) {
-//     //This takes the amount of guesses index and make it i of 5
-//     favBookQuestion = prompt('That is not the one, try again!');
-//   } else {
-//     alert(
-//       'Whoops, my favorite Harry Potter book is actually Harry Potter and the Sorcerers'
-//     );
-//   }
-// }
-
+  for (var i = 0; i < bookGuesses; i++) {
+    var favBookQuestion = prompt('What is my favorite Harry Potter Book? from these choices: ' + harryPotterBooks).toLowerCase();
+    // accessing the harry potter array at the favorite book index
+    // check an if statement if the favBookQuestion is strictly equal to the harryPotterBooks array accessed at the favoriteBookIndex(which is 0) and calling the toLowerCase() method on that String
+    if (favBookQuestion === harryPotterBooks[favoriteBookIndex].toLowerCase()) {
+      alert('Harry Potter and the Sorcerers Stone is my favorite book');
+      scoreCounter++;
+      break;
+    } else if (i < (bookGuesses - 1)) {
+      //This takes the amount of guesses index and make it i of 5
+      alert('That is not the one, try again!');
+    } else {
+      alert('Whoops, my favorite Harry Potter book is actually Harry Potter and the Sorcerers');
+    }
+  }
+}
+favBookFunc();
 // alert('you got: ' + scoreCounter + ' points out of 7 available points');
 
 
